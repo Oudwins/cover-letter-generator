@@ -1,0 +1,6 @@
+This file is treated as a template string evaluated in javascript.
+Every line will be a new paragraph
+The first line is generally the line that contains the greeting.
+In this file you will have access to the ${data} variable. Which contains all the metadata for the current letter. (check the full data at ./src/TemplateData.d.ts). 
+Don't forget to check & create fallbacks for when the data is not defined like
+${data.to ? "Dear " + data.to.name + "," : "To Whom it May Concern,"}
