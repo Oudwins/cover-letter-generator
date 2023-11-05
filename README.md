@@ -1,5 +1,11 @@
 # Unique Cover Letter Generator
 
+This is a cover letter generator using reactpdf. Select text & design templates and it will generate cover letters in bulk. It will generate both the pdf cover letter & a txt since some companies require you to submit the cover letter in a form.
+
+Good luck everyone!
+
+PS: Currently there is one basic design (twoColBasic) & I am working one a more stylized version. if you would like to contribute your own design or example cover letter text feel free to open a PR
+
 ## Usage
 
 1. Set up Enviroment
