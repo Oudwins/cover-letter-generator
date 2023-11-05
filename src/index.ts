@@ -29,17 +29,17 @@ fs.readFile(fpath, { encoding: "utf-8" }, (err, f) => {
           },
           companyName: rowData.company_name || "Evil Corp",
           position: rowData.position || "Software Engineer",
+          customParagraphs: [rowData.custom_p1, rowData.custom_p2],
         };
         const parser = await textTemplateParser(
           rowData.content_file || "example.txt"
         );
         const text = parser(data);
-        const splitText = text.split("\n");
 
         await Render({
           data,
-          text: splitText,
-          filename: rowData.filename || "example.pdf",
+          text: text,
+          filename: rowData.filename || "example",
         });
       });
 

@@ -8,4 +8,5 @@ export default interface TemplateData {
   phone: string;
   email: string;
   to?: { name: string; fullname: string; location: string };
+  customParagraphs?: string[];
 }
