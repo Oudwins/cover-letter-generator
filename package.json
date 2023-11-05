@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "rm -rf ./covers/* && pnpm bun --watch run ./src/index.ts"
+    "start": "rm -rf ./covers/* && pnpm bun --watch run ./src/index.ts",
+    "build": "rm -rf ./covers/* && pnpm bun run ./src/index.ts"
   },
   "keywords": [],
   "author": "",

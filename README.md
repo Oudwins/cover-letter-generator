@@ -11,6 +11,7 @@ PS: Currently there is one basic design (twoColBasic) & I am working one a more 
 1. Set up Enviroment
 
 ```bash
+# Install bun (I didn't want to bother setting up vite or webpack but it should be compatible)
 # install required dependencies
 pnpm i
 # Copy env
@@ -27,5 +28,7 @@ cp applications.example.tsv applications.tsv
 4. Generate PDFs
 
 ```bash
-pnpm start
+pnpm build
 ```
+
+5. Find your cover letters under ./covers/{youfilename}.{pdf/txt}
