@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
   },
   paragraph: {
     marginBottom: "5px",
-    textIndent: "-3px",
+    // textIndent: "-3px",
     textAlign: "justify",
     // backgroundColor: "red",
   },
