@@ -39,7 +39,9 @@ fs.readFile(fpath, { encoding: "utf-8" }, (err, f) => {
         await Render({
           data,
           text: text,
-          filename: rowData.filename || "example",
+          filename:
+            (process.env.FILENAME_PREFIX || "") +
+            (rowData.filename || "example"),
         });
       });
 
